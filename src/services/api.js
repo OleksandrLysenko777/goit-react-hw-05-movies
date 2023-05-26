@@ -41,7 +41,7 @@ const handleMoviesData = (response, movies) => {
     return movies.push({
       movieId: movie.id,
       movieTitle: movie.title,
-      movieBackdrop: 'https://image.tmdb.org/t/p/w200' + movie.backdrop_path,
+      movieBackdrop: 'https://image.tmdb.org/t/p/w500' + movie.backdrop_path,
     });
   });
 };
@@ -77,7 +77,7 @@ const getMovieDetails = async id => {
     tagline,
   } = response.data;
   const movieDetails = {
-    posterPath: 'https://image.tmdb.org/t/p/w300' + poster_path,
+    posterPath: 'https://image.tmdb.org/t/p/w500' + poster_path,
     title,
     releaseDate: `${new Date(release_date).getFullYear()}`,
     voteAverage: vote_average,
