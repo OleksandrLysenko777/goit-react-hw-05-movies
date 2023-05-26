@@ -1,0 +1,21 @@
+.image {
+  border-radius: 6px;
+}
+
+.thumb {
+  position: relative;
+  margin-bottom: 8px;
+}
+.label {
+  padding: 4px 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.thumb > .label {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+}
