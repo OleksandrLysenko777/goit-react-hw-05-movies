@@ -5,6 +5,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  transform: translateX(30px);
 }
 
 .filterItem {
@@ -20,13 +21,17 @@
   font-weight: 600;
   color: white;
   text-shadow: 1px 1px 2px black;
-  box-shadow: 0px 8px 22px 11px rgba(255,255,255,0.45) inset;
-  background: linear-gradient(90deg, rgba(0,0,46,0.8) 0%, rgba(9,9,56,0.4) 40%, rgba(35, 13, 24, 0.3) 100%)
+  box-shadow: 0px 8px 22px 11px rgba(255, 255, 255, 0.45) inset;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 46, 0.8) 0%,
+    rgba(9, 9, 56, 0.4) 40%,
+    rgba(35, 13, 24, 0.3) 100%
+  );
 }
 .filterItem:hover,
 .filterItem:focus {
   transform: scale(1.03);
-  box-shadow: 0px 7px 21px 10px rgba(255,255,255,0.50) inset, 2px 2px 4px -1px rgba(0,0,0,0.3);
-
-  
+  box-shadow: 0px 7px 21px 10px rgba(255, 255, 255, 0.5) inset,
+    2px 2px 4px -1px rgba(0, 0, 0, 0.3);
 }

@@ -8,7 +8,7 @@ import css from './CastElement.module.css'
 import placeholderPortrait from '../../images/placeholderPortrait.jpg';
 
 const CastElement = ({ id, srcImg, name, character }) => {
-  //const placeholder = !srcImg.includes(null) ? srcImg : placeholderPortrait;
+
   return (
     <CastGridItem key={id}>
       {!srcImg.includes(null) ? (
